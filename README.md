@@ -35,22 +35,28 @@ El archivo editable está en `docs/diagrama/diagrama\_CARDNL.drawio` (se abre co
 
 ## Costo estimado
 
-Precios consultados en Rokland, Adafruit, PiShop y Walmart (ver Referencias).
+Para estimar el costo de nuestro proyecto, buscamos los precios de los componentes que necesitaríamos si fuéramos a construir el sistema físicamente. Consultamos tiendas como Rokland, Adafruit, PiShop y Walmart (ver Referencias).
 
-1. Heltec WiFi LoRa 32 V3 con antena: 4 × $29.97 = $119.88 (Rokland)
+**Es importante aclarar que esta cotización corresponde a una posible implementación física del proyecto y no necesariamente a los gastos de nuestra simulación.** Como inicialmente estaremos trabajando con una simulación, no sería necesario comprar todos los materiales mencionados. Sin embargo, incluimos sus precios para tener una idea de cuánto costaría desarrollar el prototipo físico y evaluar su viabilidad fuera del salón.
+
+1. Heltec WiFi LoRa 32 V3 con antena: 4 × $29.97 = $119.88 (Rokland).
 2. Raspberry Pi 4 de 4 GB: $100.00 (PiShop). **Material que el grupo ya tenía.**
-3. Teclado matricial 4×4: 3 × $5.95 = $17.85 (Adafruit)
-4. Protoboard y cables de conexión: 3 × $9.95 = $29.85 (Adafruit)
-5. Cable USB-A a USB-C: \[cantidad y precio] (Adafruit)
-6. Tarjeta microSD de 32 GB: \[precio] (PiShop)
-7. Fuente de alimentación para Raspberry Pi: $8.95 (PiShop)
-8. Adaptador de alimentación USB: 3 × $7.95 = $23.85 (Adafruit)
+3. Teclado matricial 4×4: 3 × $5.95 = $17.85 (Adafruit).
+4. Protoboard y cables de conexión: 3 × $9.95 = $29.85 (Adafruit).
+5. Cable USB-A a USB-C: 4 × $4.95 = $19.80 (Adafruit).
+6. Tarjeta microSD de 32 GB: $19.95 (PiShop).
+7. Fuente de alimentación para Raspberry Pi: $8.95 (PiShop).
+8. Adaptador de alimentación USB: 3 × $7.95 = $23.85 (Adafruit).
 
-**Costo total estimado:** $340.13. Como el grupo ya tenía la Raspberry Pi, el gasto adicional es de $240.13 antes de impuestos, o $267.74 con el IVU de 11.5 %, sin incluir el envío.
+**Costo total estimado:** $340.13. Como el grupo ya tenía la Raspberry Pi, el gasto adicional para construir el prototipo físico sería de $240.13 antes de impuestos, o $267.74 con el IVU de 11.5 %, sin incluir el envío.
 
-**Gastos adicionales para apagones:** tres baterías portátiles para las viviendas y una de mayor capacidad para la Raspberry Pi, por un total aproximado de $127.94, lo que eleva el total a unos $468.07.
+Debemos tener en cuenta que estas cantidades no representan lo que estaríamos gastando actualmente en la simulación, sino una estimación de los materiales necesarios para construir el sistema físicamente. Al utilizar herramientas de simulación y componentes que ya tenemos disponibles, el costo real de esta etapa podría ser menor.
 
-**Gastos recurrentes:** no hay pagos mensuales de internet ni de servicios en la nube. Solo se consideran el mantenimiento (baterías, cables o dispositivos dañados) y el consumo eléctrico.
+**Gastos adicionales para apagones:** Si el sistema se implementara físicamente, también tendríamos que considerar fuentes de energía alternativas para mantener los dispositivos funcionando durante una emergencia. Una opción sería utilizar tres baterías portátiles para las viviendas y una de mayor capacidad para la Raspberry Pi, por un total aproximado de $127.94. Esto elevaría el valor total de los componentes a unos $468.07, sin incluir impuestos ni envío. Antes de utilizarlas, sería necesario verificar su compatibilidad y duración.
+
+**Gastos recurrentes:** El sistema no necesitaría pagos mensuales de internet ni de servicios en la nube para su funcionamiento básico. Sin embargo, en una implementación física tendríamos que considerar el consumo eléctrico y el mantenimiento de los equipos, incluyendo el reemplazo de baterías, cables o dispositivos que puedan dañarse.
+
+En nuestro caso, trabajar inicialmente mediante una simulación nos permitiría demostrar las funciones principales del sistema sin tener que invertir en todos estos componentes. Más adelante, si se quisiera implementar en una comunidad, sería necesario adquirir los materiales, realizar pruebas de comunicación y evaluar los costos adicionales de instalación y mantenimiento.
 
 ## Cómo poner en funcionamiento el prototipo
 
