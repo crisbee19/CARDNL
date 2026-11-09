@@ -1,0 +1,88 @@
+<mxfile host="Electron">
+  <diagram name="CARDNL" id="v5">
+    <mxGraphModel dx="1383" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="880" background="#FAFAFA" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" style="text;html=1;fontSize=32;fontColor=#263238;align=left;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" value="Cómo funciona CARDNL" vertex="1">
+          <mxGeometry height="45" width="800" x="40" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="text;html=1;fontSize=18;fontColor=#546E7A;align=left;verticalAlign=middle;whiteSpace=wrap;" value="Una red local para alertas y recursos que funciona sin internet ni señal de celular" vertex="1">
+          <mxGeometry height="30" width="1000" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="casa" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1E88E5;strokeWidth=3;shadow=1;fontSize=15;fontColor=#37474F;align=left;verticalAlign=top;spacing=10;overflow=fill;" value="&lt;div style=&quot;background:#E3F2FD;margin:-10px -10px 6px -10px;padding:10px 18px;border-bottom:1.5px solid #1E88E5;border-radius:16px 16px 0 0&quot;&gt;&lt;b style=&quot;font-size:20px;color:#1E88E5&quot;&gt;Nodo en la casa&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:14px;color:#37474F&quot;&gt;ESP32 (simulado en Cirkit)&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin:8px 0 0 0;padding-left:20px&quot;&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;3 botones: agua, comida y medicina&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Pantalla OLED (ej.: «REQUEST SENT / Need Water»)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Sensor de nivel de agua (detecta inundación)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;LED que confirma el pedido&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="300" width="280" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rec" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8E24AA;strokeWidth=3;shadow=1;fontSize=15;fontColor=#37474F;align=left;verticalAlign=top;spacing=10;overflow=fill;" value="&lt;div style=&quot;background:#F3E5F5;margin:-10px -10px 6px -10px;padding:10px 18px;border-bottom:1.5px solid #8E24AA;border-radius:16px 16px 0 0&quot;&gt;&lt;b style=&quot;font-size:20px;color:#8E24AA&quot;&gt;Receptor&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:14px;color:#37474F&quot;&gt;Placa Heltec LoRa 32 V3&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin:8px 0 0 0;padding-left:20px&quot;&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Recibe por radio los mensajes de todas las casas&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Se los pasa a la Raspberry Pi por cable USB&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="265" width="230" x="420" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="pi" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#43A047;strokeWidth=3;shadow=1;fontSize=15;fontColor=#37474F;align=left;verticalAlign=top;spacing=10;overflow=fill;" value="&lt;div style=&quot;background:#E8F5E9;margin:-10px -10px 6px -10px;padding:10px 18px;border-bottom:1.5px solid #43A047;border-radius:16px 16px 0 0&quot;&gt;&lt;b style=&quot;font-size:20px;color:#43A047&quot;&gt;Centro comunitario&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:14px;color:#37474F&quot;&gt;Raspberry Pi 4&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin:8px 0 0 0;padding-left:20px&quot;&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Gateway en Python: recibe y guarda cada mensaje (en desarrollo)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Base de datos SQLite con 4 tablas: requests, resources, alerts, deliveries&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Inventario del Community Center (ej.: Water: 5)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Tablero web en Flask&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Crea su propio Wi-Fi local&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="390" width="300" x="750" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tab" parent="1" style="rounded=1;arcSize=7;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FB8C00;strokeWidth=3;shadow=1;fontSize=15;fontColor=#37474F;align=left;verticalAlign=top;spacing=10;overflow=fill;" value="&lt;div style=&quot;background:#FFF3E0;margin:-10px -10px 6px -10px;padding:10px 18px;border-bottom:1.5px solid #FB8C00;border-radius:16px 16px 0 0&quot;&gt;&lt;b style=&quot;font-size:20px;color:#FB8C00&quot;&gt;Tablero web&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:14px;color:#37474F&quot;&gt;Celular o laptop&lt;/b&gt;&lt;/div&gt;&lt;ul style=&quot;margin:8px 0 0 0;padding-left:20px&quot;&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Emergency Alerts (ej.: House A, Flood Detected)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Active Requests (ej.: House A needs Water)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Available Resources (ej.: Community Center)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Deliveries (ej.: Medicine, House A → House H)&lt;/li&gt;&lt;li style=&quot;margin-bottom:5px&quot;&gt;Para vecinos, líderes y organizaciones&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="430" width="230" x="1130" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#37474F;strokeWidth=3;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="340" as="sourcePoint" />
+            <mxPoint x="420" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4" parent="1" style="ellipse;html=1;fillColor=#37474F;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=16;" value="2" vertex="1">
+          <mxGeometry height="30" width="30" x="355" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="text;html=1;fontSize=14;fontColor=#37474F;align=center;verticalAlign=middle;whiteSpace=wrap;" value="&lt;b&gt;LoRa&lt;/b&gt;&lt;br&gt;por radio" vertex="1">
+          <mxGeometry height="44" width="100" x="320" y="357" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#37474F;strokeWidth=3;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="388" as="sourcePoint" />
+            <mxPoint x="750" y="388" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c7" parent="1" style="ellipse;html=1;fillColor=#37474F;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=16;" value="3" vertex="1">
+          <mxGeometry height="30" width="30" x="685" y="339" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="text;html=1;fontSize=14;fontColor=#37474F;align=center;verticalAlign=middle;whiteSpace=wrap;" value="&lt;b&gt;Cable USB&lt;/b&gt;&lt;br&gt;(serial)" vertex="1">
+          <mxGeometry height="44" width="100" x="650" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" style="endArrow=block;endFill=1;html=1;strokeColor=#37474F;strokeWidth=3;startArrow=block;startFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="250" as="sourcePoint" />
+            <mxPoint x="1130" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" parent="1" style="ellipse;html=1;fillColor=#37474F;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=16;" value="4" vertex="1">
+          <mxGeometry height="30" width="30" x="1075" y="201" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="text;html=1;fontSize=14;fontColor=#37474F;align=center;verticalAlign=middle;whiteSpace=wrap;" value="&lt;b&gt;Wi-Fi&lt;/b&gt;&lt;br&gt;con clave" vertex="1">
+          <mxGeometry height="44" width="80" x="1050" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="ellipse;html=1;fillColor=#37474F;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=16;" value="1" vertex="1">
+          <mxGeometry height="30" width="30" x="277" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#8E24AA;fontSize=15;fontColor=#37474F;align=left;verticalAlign=middle;spacingLeft=14;dashed=1;" value="&lt;b style=&quot;color:#8E24AA&quot;&gt;Ejemplo de mensaje&lt;/b&gt;&lt;br&gt;&lt;font face=&quot;Consolas&quot; style=&quot;font-size:13px&quot;&gt;{&quot;house&quot;: &quot;House A&quot;,&lt;br&gt;&amp;nbsp;&quot;resource&quot;: &quot;Water&quot;,&lt;br&gt;&amp;nbsp;&quot;status&quot;: &quot;Pending&quot;}&lt;/font&gt;" vertex="1">
+          <mxGeometry height="118" width="270" x="400" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#B0BEC5;fontSize=15;fontColor=#37474F;align=left;verticalAlign=middle;spacingLeft=14;" value="&lt;b&gt;Estado del prototipo&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;color:#2E7D32&quot;&gt;Funciona:&lt;/b&gt; nodo en Cirkit, SQLite y tablero con 4 paneles&lt;br&gt;&lt;b style=&quot;color:#C62828&quot;&gt;En desarrollo:&lt;/b&gt; gateway y enlace LoRa" vertex="1">
+          <mxGeometry height="152" width="230" x="1130" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="text;html=1;fontSize=18;fontColor=#263238;align=left;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;" value="Dos flujos" vertex="1">
+          <mxGeometry height="30" width="300" x="40" y="763" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="rounded=1;arcSize=25;fillColor=#1E88E5;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="40" y="796" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="text;html=1;fontSize=15;fontColor=#37474F;align=left;verticalAlign=middle;whiteSpace=wrap;" value="&lt;b&gt;Pedido:&lt;/b&gt; se oprime «agua» → el gateway lo guarda en requests → aparece en Active Requests → la entrega se registra en deliveries." vertex="1">
+          <mxGeometry height="26" width="1300" x="64" y="793" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" style="rounded=1;arcSize=25;fillColor=#1E88E5;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="16" width="16" x="40" y="828" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="text;html=1;fontSize=15;fontColor=#37474F;align=left;verticalAlign=middle;whiteSpace=wrap;" value="&lt;b&gt;Alerta:&lt;/b&gt; el sensor detecta agua alta → se guarda en alerts → aparece en Emergency Alerts para toda la comunidad." vertex="1">
+          <mxGeometry height="26" width="1300" x="64" y="825" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
