@@ -1,4 +1,4 @@
-# CARDNL: Coordinador y actualizador de recursos ante desastres naturales
+# CARDNL powered by NeighborNet: Coordinador y actualizador de recursos ante desastres naturales
 
 Proyecto final del curso de Internet de las Cosas (IoT).
 
