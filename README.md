@@ -2,7 +2,7 @@
 
 Proyecto final del curso de Internet de las Cosas (IoT).
 
-**Integrantes:** Sophia Peluyera, Cristian Padilla, Ángel López
+**Integrantes:** Sophia Peluyera, Cristian Padilla, Angel López
 
 ---
 
