@@ -122,7 +122,8 @@ La presentación del proyecto está en `presentacion/`.
 
 ## Contribución de cada integrante
 
-* **Sophia Peluyera:** 
-* **Cristian Padilla:** 
-* **Ángel López:** 
+* **Sophia Peluyera:** Circuito del nodo en Cirkit, base de datos y tablero en la Raspberry Pi
+* **Cristian Padilla:** Diseño y arquitectura IoT, diagrama, repositorio de GitHub y presentación
+* **Ángel López:** Idea inicial, seguridad, costos, viabilidad y documentación.
+
 
